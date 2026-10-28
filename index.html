@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UT-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>LapQuick-Smart Laptop Shopping Assistant</title>
+    <link rel="stylesheet" href="CSS/style.css">
+  </head>
+  <body>
+    <nav class="navbar">
+    <a href="#" class="logo">LapQuick</a>
+
+    <ul class="nav-links">
+       <li><a href="#">Home</a></li>
+       <li><a href="#laptop-finder">Find a Laptop</a></li>
+       <li><a href="#comparison-section">Compare</a></li>
+    </ul>
+    </nav>
+    
+    <main>
+    <section class="hero">
+        <div class="hero-content">
+            <p class="hero-label">SMART LAPTOP SHOPPING</p>
+            <h1>Find Your Perfect Laptop</h1>
+            <p class="hero-description">Discover laptops that match your budget, work requirements,and personal preferences.</p>
+            <a href="#laptop-finder" class="hero-button">Find My Laptop</a>
+        </div>
+    </section>
+    <section id="laptop-finder" class="laptop-finder">
+      <div class="finder-container">
+      <h2>Find Your Perfect Laptop</h2>
+      <p>Tell us what you need, and we'll help you choose!</p>
+      <form id="laptop-form">
+
+            <div class="form-group">
+                <label for="budget">What's your budget?</label>
+
+                <select id="budget" name="budget">
+                    <option value="">Select your budget</option>
+                    <option value="30000">Under ₹30,000</option>
+                    <option value="50000">₹30,000 - ₹50,000</option>
+                    <option value="80000">₹50,000 - ₹80,000</option>
+                    <option value="100000">Above ₹80,000</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="usage">What will you use it for?</label>
+
+                <select id="usage" name="usage">
+                    <option value="">Select your usage</option>
+                    <option value="coding">Programming</option>
+                    <option value="study">Studying</option>
+                    <option value="gaming">Gaming</option>
+                    <option value="design">Design and editing</option>
+                    <option value="office">Office work</option>
+                </select>
+            </div>
+
+            <button type="submit" class="find-button">
+                Find Laptops
+            </button>
+            <button type="button" id="reset-button" class="reset-button">
+              Reset
+            </button>
+
+        </form>
+
+      </div>
+    </section>
+    <section id="laptop-results" class="laptop-results">
+        <h2>Recommended Laptops</h2>
+        <div id="laptop-list"></div>
+    </section>
+    
+    <section id="comparison-section">
+     <h2>Compare Laptops</h2>
+     <p id="comparison-message">
+        Select two laptops to compare their specifications.
+     </p>
+     <div id="comparison-list"></div>
+    </section>
+
+    <section id="wishlist">
+
+    </main>
+
+    <footer class="footer">
+        <p>LapQuick- Find Your Perfect Laptop</p>
+        <p>&copy;2026 LapQuick. All rights reserved.</p>
+    </footer>
+    <script src="JS/app.js"></script>
+  </body>
+</html>
